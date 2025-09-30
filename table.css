@@ -1,0 +1,67 @@
+/* Стили для таблицы */ 
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 1.5rem 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+    min-width: 600px;
+} 
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ 
+caption { 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+    color: var(--primary-color); 
+    text-align: center; 
+    caption-side: top; 
+    padding: 0.5rem; 
+    background: linear-gradient(135deg, rgba(89, 173, 68, 0.1), rgba(95, 182, 89, 0.2)); 
+    border-radius: 8px 8px 0 0; 
+} 
+ 
+thead { 
+    background: var(--gradient); 
+    color: white; 
+} 
+ 
+th, td { 
+    padding: 0.75rem; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+} 
+ 
+th { 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    font-size: 0.85rem; 
+    letter-spacing: 0.5px; 
+} 
+ 
+tbody tr:nth-child(even) { 
+    background-color: rgba(89, 173, 68, 0.1); 
+} 
+ 
+tbody tr:nth-child(odd) { 
+    background-color: white; 
+} 
+ 
+tbody tr:hover { 
+    background-color: rgba(7, 27, 2, 0.1); 
+} 
+ 
+/* Специальные стили для заголовочных ячеек */ 
+th[scope="row"] { 
+    background-color: rgba(89, 173, 68, 0.2); 
+    font-weight: bold; 
+    color: var(--dark-color); 
+} 

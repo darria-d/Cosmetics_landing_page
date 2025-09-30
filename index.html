@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Натуральная косметика</title> 
+    <link rel="icon" href="favicon.png" type="image/png" /> 
+    <!-- Подключение внешних CSS файлов --> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="table.css"> 
+</head> 
+ 
+<body> 
+    <!-- Заголовок с фиксированным позиционированием --> 
+    <header> 
+        <div class="logo-container"> 
+            <img src="favicon.png" alt="Логотип" width="100" /> 
+        </div> 
+        <h1>Натуральная косметика</h1> 
+        <nav class="quick-links"> 
+            <a href="#section1">Декоративная косметика</a> 
+            <a href="#section2">Уходовые средства</a> 
+            <a href="#table-section">Ассортимент</a> 
+            <a href="#pool">Опрос</a> 
+            <a href="#footer">Информация</a> 
+        </nav> 
+    </header> 
+ 
+    <!-- Боковое меню --> 
+    <button id="menuToggle" class="menu-toggle">☰ Меню</button>
+    <nav class="side-menu" id="sideMenu"> 
+        <h2>Меню</h2> 
+        <menu> 
+            <li><a href="#section1">Декоративная косметика</a></li> 
+            <li><a href="#section2">Уходовые средства</a></li> 
+            <li><a href="#table-section">Ассортимент</a></li> 
+            <li><a href="#pool">Опрос</a></li> 
+        </menu> 
+    </nav> 
+ 
+    <!-- Основное содержимое --> 
+    <main> 
+        <!-- Секция декоративной косметики --> 
+        <section id="section1"> 
+            <h2>Декоративная косметика</h2> 
+            <article> 
+                <p> 
+                    Наша декоративная косметика создана для тех, кто ценит не только 
+безупречный макияж, но и заботу о коже.<br /> 
+                    В составе — только натуральные пигменты, растительные масла и 
+минеральные компоненты. 
+                </p> 
+                <ul> 
+                    <li>Тональные средства – лёгкие, дышащие текстуры без силиконов и 
+парабенов</li> 
+                    <li>Тушь и подводки – на основе пчелиного воска и угольного пигмента, 
+не раздражают глаза</li> 
+                    <li>Помады и блески – с маслами ши и какао для увлажнения губ</li> 
+                </ul> 
+                <aside>«Красота не должна вредить» – наш принцип при создании каждой 
+палетки и кисти</aside> 
+            </article> 
+            <figure> 
+                <img src="photo.jpg" alt="Натуральная косметика" width="800"> 
+                <figcaption>100% натуральный состав</figcaption> 
+            </figure> 
+        </section> 
+ 
+        <!-- Секция уходовых средств --> 
+        <section id="section2"> 
+            <h2>Уходовые средства</h2> 
+            <article> 
+                <p> 
+                    Сила природы для здоровья кожи! Натуральные компоненты — основа нашей 
+уходовой линии.<br /> 
+                    Мы используем органические экстракты, холодного отжима масла и 
+эфирные композиции без синтетических отдухов.<br /> 
+                    «Кожа благодарит вас за натуральность» – убедитесь в этом с первой 
+недели использования. 
+                </p> 
+                <ul> 
+                    <li>Очищение – мягкие гели с ромашкой и алоэ вера</li> 
+                    <li>Увлажнение – кремы с гиалуроновой кислотой растительного 
+происхождения</li> 
+                    <li>Омоложение – сыворотки с витамином E и маслом шиповника</li> 
+                </ul> 
+                <aside> 
+                    Совет от эксперта<br /> 
+                    «Перед использованием нового средства проведите тест на запястье. 
+Натуральные компоненты редко вызывают аллергию, но бережливость — правило №1». 
+                </aside> 
+            </article> 
+        </section> 
+ 
+        <!-- Секция с таблицей --> 
+        <section id="table-section"> 
+            <h2>Ассортимент продукции</h2> 
+            <table> 
+                <caption>Популярные товары и их характеристики</caption> 
+                <thead> 
+                    <tr> 
+                        <th scope="col">Категория</th> 
+                        <th scope="col">Название</th> 
+                        <th scope="col">Объем</th> 
+                        <th scope="col">Цена</th> 
+                        <th scope="col">Рейтинг</th> 
+                        <th scope="col">Наличие</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <th scope="row">Тональное средство</th> 
+                        <td>BB крем "Легкое дыхание"</td> 
+                        <td>30 мл</td> 
+                        <td>1 200 ₽</td> 
+                        <td>4.8/5</td> 
+                        <td>В наличии</td> 
+                    </tr> 
+                    <tr> 
+                        <th scope="row">Тушь для ресниц</th> 
+                        <td>Натуральная тушь "Объем"</td> 
+                        <td>8 мл</td> 
+                        <td>890 ₽</td> 
+                        <td>4.9/5</td> 
+                        <td>В наличии</td> 
+                    </tr> 
+                    <tr> 
+                        <th scope="row">Помада</th> 
+                        <td>Увлажняющая помада "Ши"</td> 
+                        <td>3.5 г</td> 
+                        <td>950 ₽</td> 
+                        <td>4.7/5</td> 
+                        <td>Заканчивается</td> 
+                    </tr> 
+                    <tr> 
+                        <th scope="row">Очищающий гель</th> 
+                        <td>Гель с ромашкой и алоэ</td> 
+                        <td>150 мл</td> 
+                        <td>1 100 ₽</td> 
+                        <td>4.8/5</td> 
+                        <td>В наличии</td> 
+                    </tr> 
+                    <tr> 
+                        <th scope="row">Увлажняющий крем</th> 
+                        <td>Крем с гиалуроновой кислотой</td> 
+                        <td>50 мл</td> 
+                        <td>1 500 ₽</td> 
+                        <td>4.9/5</td> 
+                        <td>В наличии</td> 
+                    </tr> 
+                </tbody> 
+            </table> 
+        </section> 
+ 
+        <!-- Секция опроса --> 
+        <section id="pool"> 
+            <h2>Опрос</h2> 
+            <form> 
+                <p> 
+                    <label for="name">Имя:</label> 
+                    <input type="text" id="name" name="name"> 
+                </p> 
+                <p> 
+                    <label for="comments">Опишите ваш запрос:</label> 
+                    <textarea id="comments" name="comments"></textarea> 
+                </p> 
+                <p> 
+                    <label for="age">Возраст:</label> 
+                    <input type="number" id="age" name="age" min="1" max="120"> 
+                </p> 
+                <p> 
+                    <label for="birthdate">Дата рождения:</label> 
+                    <input type="date" id="birthdate" name="birthdate"> 
+                </p> 
+                <p> 
+                    <label for="phone">Телефон:</label> 
+                    <input type="tel" id="phone" name="phone"> 
+                </p> 
+                <p> 
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email"> 
+                </p> 
+                <p> 
+                    <label for="website">Ваш сайт:</label> 
+                    <input type="url" id="website" name="website"> 
+                </p> 
+                <p> 
+                    <label for="skinType">Укажите свой тип кожи:</label> 
+                    <input list="skinTypes" id="skinType" name="skinType"> 
+                    <datalist id="skinTypes"> 
+                        <option value="Сухой"> 
+                        <option value="Нормальный"> 
+                        <option value="Комбинированный"> 
+                        <option value="Жирный"> 
+                    </datalist> 
+                </p> 
+                <button type="submit">Отправить</button> 
+            </form> 
+        </section> 
+    </main> 
+ 
+    <!-- Подвал --> 
+    <footer id="footer"> 
+        <div class="footer-content">
+            <div class="footer-section"> 
+                <h2>Информация</h2> 
+            </div>  
+            <div class="footer-section"> 
+                <h3>О сайте</h3> 
+                <ul> 
+                    <li>Автор</li> 
+                    <li>История создания</li> 
+                    <li>Технологии</li> 
+                </ul> 
+            </div> 
+            <div class="footer-section"> 
+                <h3>Правовая информация</h3> 
+                <ul> 
+                    <li>Политика конфиденциальности</li> 
+                    <li>Условия использования</li> 
+                    <li>Копирайт</li> 
+                </ul> 
+            </div> 
+        </div> 
+        <div class="copyright"> 
+            <p>&copy; 2023 Натуральная косметика. Все права защищены.</p> 
+        </div> 
+    </footer> 
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sideMenu = document.getElementById('sideMenu');
+
+        if (menuToggle && sideMenu) {
+            menuToggle.addEventListener('click', function() {
+            sideMenu.classList.toggle('active');
+        
+            if (sideMenu.classList.contains('active')) {
+                this.textContent = '✕ Закрыть';
+            } else {
+                this.textContent = '☰ Меню';
+            }
+            });
+    }else {
+        console.error('Не найдены элементы меню');
+    }
+    </script>
+</body> 
+</html>
