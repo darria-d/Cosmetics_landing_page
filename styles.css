@@ -140,12 +140,16 @@ main {
 } 
  
 section { 
-    margin-bottom: 2rem; 
+    margin-bottom: 1rem; 
     background-color: white; 
     padding: 1.5rem; 
     border-radius: 8px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 } 
+#section1, #section2, #table-section, 
+    #pool, #footer {
+        scroll-margin-top: 160px;
+    }
  
 h2 { 
     color: var(--primary-color); 
@@ -184,6 +188,11 @@ figure {
     margin: 1rem 0; 
     text-align: center; 
 } 
+
+img {
+        max-width: 100%;
+        height: auto;
+}
  
 figcaption { 
     font-style: italic; 
@@ -287,3 +296,170 @@ footer li {
     padding-top: 1rem; 
     border-top: 1px solid rgba(255, 255, 255, 0.1); 
 } 
+.table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 1rem 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    table {
+        width: 100%;
+        min-width: 500px; 
+        margin: 0;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        white-space: nowrap;
+    }
+
+/* Медиазапросы для мобильных устройств */ 
+@media screen and (max-width: 500px) { 
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 1rem 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    table {
+        width: 100%;
+        min-width: 500px; 
+        margin: 0;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        white-space: nowrap;
+    }
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body { 
+        padding-top: 200px; 
+    } 
+    .side-menu { 
+    z-index: 1001;
+    }
+ 
+    .side-menu.active { 
+        transform: translateX(0); 
+    } 
+ 
+    .menu-toggle { 
+        display: block; 
+        position: fixed; 
+        top: 10px; 
+        left: 10px; 
+        background: rgba(255, 255, 255, 0.2); 
+        border: none; 
+        color: white; 
+        font-size: 1.5rem; 
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%; 
+        z-index: 1001; 
+        cursor: pointer; 
+    } 
+ 
+    section { 
+    margin-bottom: 2rem; 
+    background-color: white; 
+    padding: 1.5rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    } 
+    #section1, #section2, #table-section, 
+    #pool, #footer {
+        scroll-margin-top: 160px;
+    }
+ 
+    header h1 { 
+        font-size: 1.4rem; 
+        margin: 0.5rem 0; 
+        word-wrap: break-word;
+    } 
+ 
+    .quick-links { 
+        gap: 0.5rem; 
+        flex-wrap: wrap;
+    } 
+ 
+    .quick-links a { 
+        font-size: 0.8rem; 
+        padding: 0.3rem; 
+        white-space: nowrap;
+    }
+    
+    header { 
+        flex-direction: column; 
+        text-align: left; 
+        padding: 0.5rem;
+        width: 100%; 
+        box-sizing: border-box;
+    } 
+ 
+    .quick-links { 
+        justify-content: center; 
+        margin-top: 0.5rem; 
+    } 
+ 
+    .side-menu { 
+        top: 160px; 
+        height: calc(100vh - 160px); 
+        width: 100%;
+        max-width: 100vw;
+    } 
+ 
+    main { 
+        margin-left: 0; 
+        width: 100%;
+        overflow: hidden;
+    } 
+ 
+    .footer-content { 
+        flex-direction: column; 
+        width: 100%;
+    } 
+ 
+    .footer-section { 
+        margin-bottom: 1.5rem; 
+        width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    table {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    p, li, span, div {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
